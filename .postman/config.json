@@ -1,9 +1,12 @@
 {
   "workspace": {
-    "id": "ca27f5bf-b431-49cf-8fad-347b44c34d6e"
+    "id": "039acc45-220c-421e-8d07-ff39ec7689f3"
   },
   "entities": {
-    "collections": [],
+    "collections": [
+      "../postman/collections/Postman Collection (from GraphQL)_43118344-169bf4de-dda7-41ca-aedf-22db4bff1575.postman_collection.json",
+      "../postman/collections/New Collection_43118344-5034696c-8eb7-426f-ad88-c3ad30b52644.postman_collection.json"
+    ],
     "environments": [],
     "specs": [],
     "flows": [],
