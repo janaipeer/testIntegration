@@ -1,0 +1,104 @@
+{
+  "info": {
+    "_postman_id": "169bf4de-dda7-41ca-aedf-22db4bff1575",
+    "name": "Postman Collection (from GraphQL)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "mutations",
+      "item": [
+        {
+          "name": "updateSelfEvaluation",
+          "id": "c1266614-156c-48b2-9936-2e19726ac463",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation updateSelfEvaluation ($input: UpdateSelfEvaluationInput!) {\n    updateSelfEvaluation (input: $input) {\n        id\n        value\n        comment\n        updatedDate\n        createdDate\n        outdatedDate\n        employeeId\n        change\n        talkId\n    }\n}",
+                "variables": "{\n  \"input\": {\n    \"id\": 0,\n    \"value\": \"\",\n    \"comment\": \"\",\n    \"targetUpsaId\": 0,\n    \"channel\": \"\"\n  }\n}"
+              }
+            },
+            "url": {
+              "raw": "{{url}}",
+              "host": [
+                "{{url}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "fe5c7972-169d-4ca1-9186-b5cfd1b65c16"
+    },
+    {
+      "name": "queries",
+      "item": [
+        {
+          "name": "lastSelfEvaluation",
+          "id": "5a810027-81f3-43e0-9371-d3d9375d6b11",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "query lastSelfEvaluation {\n\n}",
+                "variables": "{}"
+              }
+            },
+            "url": {
+              "raw": "{{url}}",
+              "host": [
+                "{{url}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "trendViewSelfEvaluation",
+          "id": "93893009-4712-4ca5-a943-5bcfac26a3ee",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "query trendViewSelfEvaluation {\n\n}",
+                "variables": "{}"
+              }
+            },
+            "url": {
+              "raw": "{{url}}",
+              "host": [
+                "{{url}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "3abbbf94-07cc-497b-be04-3e8b773dc2f9"
+    }
+  ],
+  "variable": [
+    {
+      "key": "url",
+      "value": "",
+      "type": "any",
+      "description": "URL for the request."
+    }
+  ]
+}
